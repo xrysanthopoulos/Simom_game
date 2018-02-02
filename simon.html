@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Simon game</title>
+      <link rel="stylesheet" href="css/simon.css">
+</head>
+<body>
+  <div class="circle-big">
+  <div class="top">
+    <div class="green btn" id=1></div>
+    <div class="red btn" id=2></div>
+  </div>
+  <div class="bottom">
+    <div class="yellow btn" id=3></div>
+    <div class="blue btn" id=4></div>
+  </div>
+<div class="circle-small">
+<h3 class="title">Simon<span>®</span></h3>
+<div class="display-buttons">
+   <div class="display">
+      <div class="display-char led-off-char">--</div>
+      <h3>COUNT</h3>
+   </div>
+   <div class="buttons">
+      <div class="start">
+      <div class="start-button clickable" id="start"></div>
+            <h3>START</h3>
+      </div>
+      <div class="strict">
+        <div class="led" id="pwr-led"></div>
+      <div class="strict-button clickable"></div>
+            <h3>STRICT</h3>
+      </div>
+   </div>
+</div>
+<div class="switch">
+      <h2 class="switch-off">OFF</h2>
+      <div class="switch-box">
+        <div class="switch-slide clickable" id="sw-pwr"></div>
+      </div>
+      <h2 class="switch-on">ON</h2>
+      </div>
+   </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script  src="js/simon.js"></script>
+</body>
+</html>

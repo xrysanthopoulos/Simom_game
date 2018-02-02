@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css?family=Bungee");
+@import url("https://fonts.googleapis.com/css?family=Orbitron");
+html {
+  font-family: 'Bungee', cursive;
+  background-color: #B0BEC5;
+}
+
+.circle-big {
+  width: 492px;
+  height: 492px;
+  background: #333;
+  border-radius: 100%;
+  margin: 0 auto;
+  position: relative;
+  box-shadow: 0px 0px 12px #222;
+}
+.circle-big .top {
+  position: relative;
+}
+.circle-big .top .green {
+  border-top-left-radius: 100%;
+  background-color: green;
+  width: 220px;
+  height: 220px;
+  display: inline-block;
+  border: 12px solid #333;
+}
+.circle-big .top .red {
+  border-top-right-radius: 100%;
+  background-color: red;
+  width: 220px;
+  height: 220px;
+  display: inline-block;
+  border: 12px solid #333;
+}
+.circle-big .top .lighter {
+  background-color: black;
+}
+.circle-big .bottom {
+  position: relative;
+}
+.circle-big .bottom .yellow {
+  border-bottom-left-radius: 100%;
+  background-color: yellow;
+  width: 220px;
+  height: 220px;
+  display: inline-block;
+  border: 12px solid #333;
+}
+.circle-big .bottom .blue {
+  border-bottom-right-radius: 100%;
+  background-color: blue;
+  width: 220px;
+  height: 220px;
+  display: inline-block;
+  border: 12px solid #333;
+}
+.circle-big .bottom .lighter {
+  background-color: black;
+}
+
+.circle-small {
+  width: 270px;
+  height: 270px;
+  background: #fff;
+  border-radius: 100%;
+  margin: 0 auto;
+  position: relative;
+  border: 12px solid #333;
+  margin-top: -400px;
+}
+
+.title {
+  position: relative;
+  text-align: center;
+  padding-top: 40px;
+  font-size: 45px;
+  font-weight: bold;
+  margin: 0;
+  padding: 37px 0 10px 0;
+}
+
+.display-buttons {
+  display: flex;
+}
+.display-buttons .display-char {
+  background-color: #7e0303;
+  width: 40px;
+  height: 30px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 34px;
+  color: red;
+  font-size: 22px;
+  font-weight: 900;
+  font-family: "Orbitron", sans-serif;
+  border: 5px solid black;
+  border-radius: 20%;
+  box-shadow: 0px 2px 5px black;
+}
+.display-buttons .led-off-char {
+  color: #430710;
+}
+.display-buttons .display {
+  margin: auto;
+  padding: 10px;
+}
+.display-buttons .display h3 {
+  text-align: center;
+  font-size: 15px;
+  margin-top: 20px;
+}
+.display-buttons .buttons {
+  margin: 0 auto;
+}
+.display-buttons .start {
+  padding-right: 30px;
+}
+.display-buttons .start, .display-buttons .strict {
+  display: inline-block;
+  margin: 0;
+}
+.display-buttons .start h3, .display-buttons .strict h3 {
+  font-size: 15px;
+  margin-top: 19px;
+}
+.display-buttons .start-button {
+  width: 25px;
+  height: 25px;
+  background: red;
+  border-radius: 100%;
+  border: 4px solid black;
+  box-shadow: 0px 3px 3px black;
+  margin: 0 auto;
+  position: relative;
+}
+.display-buttons .start-button:active, .display-buttons .strict-button:active {
+  box-shadow: 0 1px 1px #000;
+  top: 3px;
+}
+.display-buttons .led {
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: #333;
+  margin: 0 auto 10px auto;
+  position: relative;
+  border: 0.5px solid #000;
+}
+.display-buttons .led .led-on {
+  background-color: #2ffd00;
+}
+.display-buttons .strict-button {
+  width: 25px;
+  height: 25px;
+  background: yellow;
+  border-radius: 100%;
+  border: 4px solid black;
+  box-shadow: 0px 3px 3px black;
+  margin: 0 auto;
+  position: relative;
+}
+
+.switch {
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+}
+.switch .switch-box {
+  display: inline;
+  width: 45px;
+  height: 20px;
+  background: #004180;
+  border-radius: 2px;
+}
+.switch .switch-box .switch-slide {
+  width: 20.5px;
+  height: 16px;
+  background-color: #2196F3;
+  border: 2px solid #004180;
+  border-radius: 4px;
+}
+.switch .switch-box .sw-on {
+  margin-left: 20.5px;
+}
+.switch .switch-on, .switch .switch-off {
+  font-size: 15px;
+  margin: auto;
+}
+
+.clickable {
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.unclickable {
+  pointer-events: none;
+}
