@@ -3,12 +3,6 @@ $(document).ready(function() {
   
   let game={};
   let i=0;
-  
-  game.reset = function() {
-    this.init();
-    this.strict=false;
-    this.light;
-  }
  
   game.reset = function() {
     this.sequence=[];
